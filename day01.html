@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title></title> 
+    </head> 
+    <body> 
+        <!-- Vue 是一个渐进式的Javascript的框架 （工具/属性的方式） 
+        vue将网页开发中最常用的dom操作，内置到了框架之中，操作时，更加专注于数据逻辑的处理，而不再需要进行繁琐的DOM操作，还有利用组件化开发 
+        前端最基本/核心 的操作：就是把我们的数据呈现到页面上，把更新的数据再更新到页面上 --> 
+        <div> 
+            <!-- 一般我们会有一个元素来作为vue生效的位置，这个元素我们一般会叫做根元素，根元素一般会使用id来标识 --> 
+            <div id="app"> 
+                <!-- 差值表达式，用来将数据呈现到页面上，一般我们使用双大括号来包裹数据，vue会自动将数据解析出来，并呈现到页面上 
+                固定的语法结构，我们可以直接以名称的方式来访问 --> 
+                <p>{{ title }}</p> 
+                <p>{{ content }}</p> 
+                <!-- vue的模板语法，一般我们使用双大括号来包裹数据，vue会自动将数据解析出来，并呈现到页面上 --> 
+            </div> 
+        </div> 
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+        <script> 
+            // 引入 Vue 的全局对象 
+            const {createApp} = Vue;
+ 
+            // 创建一个 Vue 应用实例 
+            const app = createApp({ 
+                // data 函数返回一个对象，包含应用的数据 
+                data() { 
+                    return { 
+                        title: '这是标题文本', 
+                        content: '这是内容文本' 
+                    }
+                } 
+            }); 
+ 
+            // 挂载应用到指定的 DOM 元素 
+            app.mount('#app');  
+        </script> 
+        <style> 
+        </style> 
+    </body> 
+</html> 

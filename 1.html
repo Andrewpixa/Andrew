@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				width: 300px;
+				height: 300px;
+				background-color: #000000;
+				border-radius: 20px;
+				
+			}
+			#big-box1{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-content: space-around;
+				
+				margin: 10px 5px 20px 10px;
+			}
+			
+			#big-box2{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-content: space-around;
+				margin: 10px 5px 20px 10px;
+				
+			}
+			
+			#big-box3{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-content: space-around;
+				margin: 10px 5px 20px 10px;
+			}
+			.circle{
+				width: 100px;
+				height: 100px;
+				background-color: #FFFFFF;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div id="big-box1">
+			<div class="box"><span><div class="circle"></div></span></div>
+			<div class="box"><span style="display: flex; justify-content: center;"><div class="circle"></div></span></div>
+			<div class="box"><span style="display: flex; justify-content: flex-end;"><div class="circle"></div></span></div>
+			<div class="box"><span style="display: flex; justify-content: space-between;"><div class="circle"></div> <div class="circle"> </div></span></div>
+			
+			<div class="box"><span >
+			<div class="circle" style="display: flex; justify-content: start;"></div>
+			<div class="circle" style="display: flex; justify-self: center; align-self: center;"></div>
+			<div class="circle" style="display: flex; justify-self: flex-end; align-self: flex-end;"></div>	</span></div>
+			
+				
+			</div>
+			
+			
+			
+		
+			
+			<div id ="big-box2">
+				
+			<div class="box"><span >
+			<div class="circle" style="display: flex; justify-content: start; opacity: 0;"></div>
+			<div class="circle" style="display: flex; justify-self: center; align-self: center;"></div>
+				</span></div>
+			
+			
+			
+			<div class="box" > 
+			<div class="circle" style="display: flex; justify-self: flex-end; "></div> 
+			<div class="circle" style="display: flex; justify-self: flex-end; "></div> 
+			<div class="circle" style="display: flex; justify-self: flex-end; "></div> 
+			</div>	
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			</div>
+			
+			
+			<div id="big-box3">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+
+			</div>
+		</div>
+	</body>
+</html>
